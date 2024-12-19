@@ -3,7 +3,7 @@ import piechart from "../assets/piechart.svg";
 
 const Box1 = () => {
     return (
-        <div className="shadow-bottom w-fit rounded-3xl">
+        <div className="shadow-bottom w-fit rounded-3xl bg-white">
             <div className="w-64 h-40 flex flex-col font-inter border px-6 py-4 justify-between rounded-3xl shadow-box">
                 <div className="flex justify-between items-center">
                     <div className="w-14 h-14 flex justify-center items-center rounded-full relative">
