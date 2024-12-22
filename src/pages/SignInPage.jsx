@@ -5,12 +5,12 @@ import subtract from "../assets/Subtract.png";
 
 const SignInPage = () => {
     return (
-        <div className="flex w-full h-svh">
-            <div className="w-1/2">
-                <div className="absolute top-[477px] left-[377px] z-10">
+        <div className="flex w-full h-svh overflow-x-hidden">
+            <div className="hidden w-1/2 relative container custom:flex">
+                <div className="absolute top-[477px] left-[48%] z-10">
                     <Box1 />
                 </div>
-                <div className="absolute top-[320px] left-[120px] z-1">
+                <div className="absolute top-[320px] left-1/4 z-1">
                     <Box2 />
                 </div>
                 <img
@@ -19,8 +19,10 @@ const SignInPage = () => {
                     alt="frontimage"
                 />
             </div>
-            <div className="w-1/2 bg-[#FAFAFA] flex justify-center items-center">
-                <SignIn />
+            <div className="w-full custom:w-1/2 bg-[#FAFAFA] flex flex-col justify-center items-center p-4">
+                <div className="">
+                    <SignIn />
+                </div>
             </div>
         </div>
     );

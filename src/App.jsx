@@ -3,15 +3,16 @@ import './App.css'
 import SignInPage from './pages/SignInPage'
 import SignIn from './components/SignIn'
 import { DashBoard } from './pages/DashBoard'
+import { Route, Routes } from 'react-router-dom'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
-        {/* <SignInPage/> */}
-        <DashBoard/>
-    </>
+    <Routes>
+        <Route path='/signin' element={<SignInPage/>} />
+        <Route path='/dashboard' element={<DashBoard/>} />
+    </Routes>
   )
 }
 
